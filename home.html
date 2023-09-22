@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Task 3 SIT120</title>
+    <link rel="icon" type="image/x-icon" href="Task1Fav.png">
+    <link rel="stylesheet" href="CSS/default.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="header" id="Task4">
+            <h1>Jason Dixons Portfolio for SIT120</h1>
+            <h2>This is my portfolio of completed tasks for this unit.</h2>
+            <p>For this unit as I did not have enough time to work on the higher grade parts due to working I have completed the 4 Pass tasks including this one.</p>
+
+            <div v-if="showDiv1" @:click="showTasks(1)"> <p><button href=#Task1 id="jump">Jump to Task 1</button>     In Task 1 we had to build a single page website with HTML and CSS elements. </p></div>
+
+
+            <div v-if="showDiv2" @:click="showTasks(2)"><p><button href=#Task2>Jump to Task 2</button>    In Task 2 Part 1 we had to build a single page website that would would respond to different size screens.</p></div>
+
+
+            <div v-if="showDiv3" @:click="showTasks(3)">
+                <p><button href=#Task3>Jump to Task 2.2</button>  In Task 2 Part 2 we used Javascript inside a html page.</p>
+            </div>
+
+
+            <div v-if="showDiv4" @:click="showTasks(4)">
+                <p><button href=#Task4 id="hidable">Jump to Task 3</button>    In Task 3 we had to build a portfolio website for ourselfs I made on that showed all of the previous websites including screenshots of them for reference.</p>
+            </div>
+            <div @:click="showTasks(5)"><p><button id="reset">Show All</button></p></div>
+        </div>
+
+
+
+        
+            <div class="cardwrapper">
+                <div class="card col-3 col-s-3" id="Task1" v-if="showTask1">
+                    <h2>Task 1</h2>
+                    <img src="Task1/Task1 Screenshot1.jpg" alt="Task 1 First screenshot" />
+                    <h3>Task 1 Screenshot</h3>
+
+                    <p>
+                        This was our first Task for the unit where we made a simple single page website that included CSS elements and HTML elements.This was our introduction to HTML for this unit along with our introduction to CSS.
+                        Using some basic table layouts along with some div tags and different input types to make a website that was interactable by the user. We used CSS to make the website look coherent and give a more then basic look to our task.
+                    </p>
+                    <h3><a href="Task1/Task1.html">Visit Website</a></h3>
+
+                </div>
+                <div class="card col-3 col-s-3" id="Task2"v-if="showTask2">
+
+                    <h2>Task 2</h2>
+                    <img src="Task2/task 1.2p 1.png" alt="Task 2 First screenshot" />
+                    <h3>Task 2 First screenshot</h3>
+
+                    <p>
+                        This was our first Task for the unit where we made a simple single page website that included CSS elements and HTML elements, using @media with max width to allow the website to show alternative layouts and a different image on a mobile viewing size.
+                    </p>
+                    <h3><a href="Task2/Task1.2P.html">Visit Website</a></h3>
+
+                </div>
+                <div class="card col-3 col-s-3" id="Task3"v-if="showTask3">
+
+                    <h2>Task 2 Part 2</h2>
+                    <img src="Task2/task 1.2p 3.png" alt="Task 2 Second Screenshot" />
+                    <h3>Task 2 Second Screenshot</h3>
+
+                    <p>
+                        For this Task made use of Javascript for building our website.I made a purposeful mistake in the header which the user can correct with a button press, 
+                        The ability for the title to be made into uppercase and lowercase through javascript, Adding some extra characters to the front and the back of the title as well as showing the length of the title at all points.
+                        Showing an array of javascript items that I used for the website with the ability to add and remove from the array and display those to the website. It also shows the current date and time. 
+                        Along with some other javascript functions as well. 
+                    </p>
+                    <h3><a href="Task2/Task1.2PPart2.html">Visit Website</a></h3>
+
+                </div>
+                <div class="card col-3 col-s-3" id="Task4" v-if="showTask4">
+                    <img src="screenshot1.png" alt="Task 3 Screenshot" />
+                    <h3>Task 3 Screenshot</h3>
+                    <p>For this Task we were asked to make a portfolio website for this unit, This is a screenshot of the website you are currently viewing in default mode. For this task I used a combination of everything I learnt from this unit along with some personal research.
+                    Using the CSS we learnt for task 1 plus some extra research to give the website a interactive touch along with making it look coherent and nice. Using the reactivity we learnt from task 2 to make the cards and the adaptability of the website.
+                    Using Vue which we learnt between the previous task and this one with impliment some methods that would hide various parts of the website on user command to give a bit more interactivity.</p>
+                    <h3><a href="home.html">Visit Website</a></h3>
+                </div>
+            </div>
+        </div>
+    
+    <footer id="footer">
+        @by Jason Dixon 2023 Semester 2 Deakin University for Task 1.3P
+    </footer>
+
+    <script type="text/javascript" language="javascript" src="JS/main.js"></script>
+</body>
+
+</html>

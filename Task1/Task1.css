@@ -1,0 +1,80 @@
+body {
+    background: #ccc;
+}
+
+p {
+    font-weight: bold;
+    align-self: center;
+}
+
+table {
+    border-style: double;
+    border-radius: 5px;
+}
+
+image {
+}
+
+#Main th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: lightgreen;
+    color: #000000;
+}
+
+#Main tr:nth-child(even) {
+    background-color: darkgrey;
+}
+
+#Main tr {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+    #Main tr:hover {
+        background-color: darkseagreen;
+        color: white;
+    }
+
+input[type=text], select {
+    align-self: center;
+    text-align: left;
+    width: 150px;
+    padding: 10px 20px;
+    margin 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.5s ease-in-out;
+}
+
+    input[type=text]:focus {
+        background-color: lightgreen;
+        width: 100%;
+    }
+
+input[type=submit], [type=reset] {
+    width: 45%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=radio] {
+}
+
+div.Form {
+    font-family: Arial;
+    font-variant: small-caps;
+    width: 400px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
